@@ -38,22 +38,22 @@ function mothlyData (){
 }
 
 dailyBtn.addEventListener('click', () => {
-    dailyBtn.classList.remove('lower_text')
-    weeklyBtn.classList.add('lower_text')
-    mothlyBtn.classList.add('lower_text')
+    dailyBtn.classList.remove('text-muted')
+    weeklyBtn.classList.add('text-muted')
+    mothlyBtn.classList.add('text-muted')
     dailyData()
 })
 
 weeklyBtn.addEventListener('click', () => {
-    weeklyBtn.classList.add('lower_text')
-    mothlyBtn.classList.add('lower_text')
-    dailyBtn.classList.remove('lower_text')
+    weeklyBtn.classList.add('text-muted')
+    mothlyBtn.classList.add('text-muted')
+    dailyBtn.classList.remove('text-muted')
     weeklyData()
 })
 
 mothlyBtn.addEventListener('click', () => {
-    mothlyBtn.classList.add('lower_text')
-    dailyBtn.classList.remove('lower_text')
-    weeklyBtn.classList.add('lower_text')
+    mothlyBtn.classList.add('text-muted')
+    dailyBtn.classList.remove('text-muted')
+    weeklyBtn.classList.add('text-muted')
     mothlyData()
 })
